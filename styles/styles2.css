@@ -1,0 +1,221 @@
+:root {
+    --main-text-color: #2A3137;
+    --tablet-background-color: #FFFFFF;
+    --tablet-green-background: #E8F9EC;
+    --tablet-green-text: #00984F;
+    --tablet-grey-text: #5E6C77;
+    --tablet-grey-background: #F1F4F9;
+    --border-solid-grey: rgba(42, 49, 55, 0.85);
+    --icons-background-color: rgba(220, 227, 235, 1);
+
+
+
+}
+/* Общие стили */
+body {
+    font-family: Inter, sans-serif;
+    padding: 0;
+    background-color: #C8C8C8; /* Серый фон */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    min-height: 100vh;
+    min-width: 1000px;/* Занимает всю высоту экрана */
+    margin: 10px 10% 10px 10%; /* Убирает стандартные отступы body */
+}
+
+/* Контейнер для основного содержимого */
+
+
+/* Заголовок */
+h1 {
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: var(--main-text-color);
+}
+
+/* Подзаголовок */
+h2 {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: var(--main-text-color);
+}
+h3 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: var(--main-text-color);
+}
+/* Параграфы */
+p {
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* Ссылки */
+a.policy{
+    height: auto;
+    color: var(--tablet-grey-text);
+    font-size: 15px;
+    text-decoration: none;
+}
+/* Ссылки на иконки*/
+a{
+    /*max-width: auto;*/
+    height: auto;
+    color: var(--icons-background-color);
+    font-size: 32px;
+}
+
+
+/* Список услуг */
+
+
+/* Элементы списка */
+li {
+    margin: 10px 0 0 0;
+}
+
+
+
+
+ img {
+    width: 95%;
+    height: 45%;
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Тень */
+    margin: 10px;
+    
+}
+
+
+
+
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0;
+}
+
+
+
+
+.hero__subtitle {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--main-text-color);
+
+}
+
+.card-box {
+    font-size: 18px;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+    display: block;
+    line-height: 1.5;
+}
+
+.stack-content > li::marker  {
+    color: #5b6166;
+    margin: 10px 0 0 0;
+}
+
+.stack-content {
+    list-style-type: disc;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 8px;
+    padding-left: 18px;
+}
+
+
+/* Background+Border */
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Занимает всю высоту экрана */
+    margin: 0;
+}
+
+.tablet {
+    display: block;
+    justify-content: left;
+    text-align: left;
+    background: var(--tablet-background-color);
+    color: var(--tablet-text-color);
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid var( --border-solid-grey);
+    border-radius: 20px;
+    flex-grow: 1;
+}
+.second-column {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Занимает всю высоту экрана */
+    margin: 0;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 8px;
+}
+
+.button {
+    border: none;
+    display: inline-flex; /* Используем flexbox для центрирования */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    background-color: var(--border-solid-grey); /* Цвет фона */
+    border-radius: 960px; /* Скругление углов */
+    padding: 10px 20px; /* Внутренние отступы */
+    margin: 5px 5px;
+}
+
+
+.left-city {
+    display: flex; /* Делаем контейнер flex-контейнером */
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.tablet.green {
+    background-color: var(--tablet-green-background);
+    color: var(--tablet-green-text);
+    border-radius: 20px;
+    border: 0;
+}
+
+.tablet.grey {
+    background-color: var(--tablet-grey-background);
+    color: var(--tablet-grey-text);
+    border-radius: 20px;
+    border: 0;
+}
+
+footer {
+    width: 100%; /* Растягиваем футер на всю ширину */
+    color: var(--tablet-grey-text);
+}
+
+.regions {
+    flex-grow: 1;
+}
+
+.some-text {
+    max-width: 40%;
+}
