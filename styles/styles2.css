@@ -11,6 +11,49 @@
 
 
 }
+
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .first-column,
+    .second-column {
+        width: 100%;
+    }
+
+    .profile-photo {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .button {
+        flex-grow: 1;
+        margin: 10px;
+    }
+
+    .regions ul {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .tablet {
+        padding: 10px;
+    }
+
+    .some-text {
+        font-size: 1em;
+    }
+
+    footer {
+        box-sizing: border-box;
+    }
+}
 /* Общие стили */
 body {
     font-family: Inter, sans-serif;
